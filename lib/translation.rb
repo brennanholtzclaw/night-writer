@@ -1,5 +1,5 @@
-require 'night_writer'
-require 'night_reader'
+# require 'night_writer'
+# require 'night_reader'
 
 class Translator
   def translate
@@ -66,7 +66,7 @@ class Translator
                 "Z"=>[['.','.','0','.'], ['.','.','.','0'], ['.','0','0','0']]}
 #easier to do defs like this or figure out how to make sure the computer prints a capital letter?
 #I can't figure out a goot way to make sure a single word is .upcase'd otherwise.
-#this simply sets the set to A rater than a and then spliting the string and looking for what to .upcase
+#this simply sets the set to A rather than a and then spliting the string and looking for what to .upcase
 #I like this idea enought that I typed all this crap out, so it's what I'm sticking with for now.
   end
 end
