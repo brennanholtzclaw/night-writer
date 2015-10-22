@@ -1,7 +1,7 @@
 # require 'night_writer'
 # require 'night_reader'
 
-class Translator
+class Translation
   def translate
       letters ={"a"=>[['0', '.'], ['.', '.'], ['.', '.']],
                 "b"=>[['0', '.'], ['0', '.'], ['.', '.']],
@@ -36,7 +36,7 @@ class Translator
                "!" => [['.', '.'], ['0', '0'], ['0', '.']],
                "?" => [['.', '.'], ['0', '.'], ['0', '0']],
                "'" => [['.', '.'], ['.', '.'], ['0', '.']],
-               "-" => [['.', '.'], ['.', '.'], ['0', '0']],}
+               "-" => [['.', '.'], ['.', '.'], ['0', '0']]}
                 #
                 # "A"=>[['.','.','0','.'], ['.','.','.','.'], ['.','0','.','.']],
                 # "B"=>[['.','.','0','.'], ['.','.','0','.'], ['.','0','.','.']],
@@ -64,9 +64,17 @@ class Translator
                 # "X"=>[['.','.','0','0'], ['.','.','.','.'], ['.','0','0','0']],
                 # "Y"=>[['.','.','0','0'], ['.','.','.','0'], ['.','0','0','0']],
                 # "Z"=>[['.','.','0','.'], ['.','.','.','0'], ['.','0','0','0']]}
+
+##### USING NUMBRL CODING
+                # 10: "a", 30: "b", 11: "c", 13: "d", 12: "e", 31: "f", 33: "g",
+                # 32: "h", 21: "i", 23: "j", 50: "k", 70: "l", 51: "m", 53: "n",
+                # 52: "o", 71: "p", 73: "q", 72: "r", 61: "s", 63: "t", 54: "u",
+                # 74: "v", 27: "w", 55: "x", 57: "y", 56: "z", 04: "caps",
+                # 62: "!", 40: "'", 20: ", ", 44: "-", 26: ". " 64: "? "
 #easier to do defs like this or figure out how to make sure the computer prints a capital letter?
 #I can't figure out a goot way to make sure a single word is .upcase'd otherwise.
 #this simply sets the set to A rather than a and then spliting the string and looking for what to .upcase
 #I like this idea enought that I typed all this crap out, so it's what I'm sticking with for now.
+#Nope - probably won't work.
   end
 end
